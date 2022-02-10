@@ -6,41 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1{
-            color: goldenrod;
+        h1::before{
+            content: "Hello ";
+            color: blueviolet;
+            font-size: 12px;
+            background-color: black;
         }
-        .special-effect{
-            color: indianred;
-            font-size: 60px;
-            background-color: lawngreen;
-        }
-        input:focus{
-            font-weight: 700;
-            font-size: 20px;
-            color: green;
-        }
-        li:nth-child(2n){
+        .special-effect::after{
+            content: " Bye";
+            font-size: 15px;
             background-color: aqua;
+        }
+        p::before{
+            content: "❤️";
         }
     </style>
 </head>
 <body>
     <h1>Pseudo Class</h1>
-    <h1>Normal Class</h1>
+    <h1 class="special-effect">Normal Class</h1>
     <h1 class="special-effect">Vodro Class</h1>
     <input name="email" type="text">
     <br>
     <input name="password" type="text">
     <hr>
-    
+    <a href="https://www.facebook.com/codersjahangir/">Facebook</a>
     <ul>
-        <li>Alia</li>
-        <li>Dalia</li>
-        <li>Malia</li>
-        <li>joglu</li>
-        <li>Moglu</li>
-        <li>lili</li>
-        <li>nalia</li>
+        <p>Alia</p>
+        <p>Dalia</p>
+        <p>Malia</p>
+        <p>joglu</p>
+        <p>Moglu</p>
+        <p>lili</p>
+        <p>nalia</p>
     </ul>
 </body>
 </html>
